@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<title>Flexbox Challenge</title>
-	<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>Pixel Art for Udacity</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<header>
-		<h1>Big Kitty Life</h1>
-	</header>	
-	<div class='photo-grid-container'>
-	  <div class='photo-grid'>
-	    <div class='photo-grid-item first-item'>
-	      <img class="col-img" src="images/kitty1small.jpg" alt="Sweet Kitty">
-	      <h2> Suavecita Kitty </h2>
-	      <p>Cats go for world domination have secret plans but eat a plant, kill a hand so destroy the blinds. Lie on your belly and purr when you are asleep plop down in the middle where everybody walks. </p>
-	    </div>
-	    <div class='photo-grid-item'>
-	      <img class="col-img" src="images/kitty2bsmall.jpg" alt="Warm Kitty">
-	      <h2> Katness Everclean </h2>
-	      <p>Behind the couch stare at wall turn and meow stare at wall some more meow again continue staring so cat not kitten around. Go into a room to decide you didn't want to be in there anyway.</p>
-	    </div>
-	    <div class='photo-grid-item'>
-	      <img class="col-img" src="images/kitty3small.jpg" alt="Purr Kitty">
-	      <h2> Kitty Luna </h2>
-	      <p>Stare at the wall, play with food and get confused by dust eats owners hair then claws head but gnaw the corn cob. Bathe private parts with tongue then lick owner's face.</p>
-	    </div>
-	  </div>
-	</div>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+    <title>Drawing pixels!</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+    <div id = "pixelContainer">
+        <h2>Choose Grid Size</h2>
+        <form id="sizePicker"> 
+            <br>
+            Nr. of Rows:
+            <input class="element" type="number" id="inputHeight" name="height" min="1" max="40" value="10"> 
+            <br>
+            Nr. of Cols:
+            <input class="element" type="number" id="inputWeight" name="width" min="1" max="40" value="10">
+            <br>
+            <button class="element" id="drawCanvas" type="submit">Draw Canvas</button>
+            <button class="element" id="clear" type="button">Clear</button>
+        </form>
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker" value="#00ffe4">
+    </div>
+    <div id="pixelDrawing">
+    <h2>Enjoy Drawing</h2>
+    <table id="pixelCanvas"></table>
+    <script src="designs.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
