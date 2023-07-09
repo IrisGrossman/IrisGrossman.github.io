@@ -9,4 +9,4 @@ jobs:
       - name: Broken Link Check
         uses: technote-space/broken-link-checker-action@v2
         with:
-          path: 'index.html'
+          path: 'IrisGrossman.github.io/index.html'
