@@ -10,4 +10,4 @@ jobs:
               with:
                 node-version: '16.13.0'
             - run: npm install -g @testim/testim-cli
-            - run: testim --token <TESTIM_TOKEN> --project <PROJECT_ID> --grid <GRID_NAME>
+            - run: testim --token "KATnjf9y0sabiLk2KATHEbwVzs7ebdQYZTQ3bisglg5Kra0One" --project "wxM1xSDNtB4bynjs6Pl9" --grid "Testim-Grid"
