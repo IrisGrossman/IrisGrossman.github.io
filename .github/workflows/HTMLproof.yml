@@ -1,11 +1,14 @@
 on: [push]
 
 
-name: Proof HTML
 jobs:
-  check:
-    name: Broken Link Check
+  check_html_links_job:
     runs-on: ubuntu-latest
+    name: A job to test check-html-links-action
     steps:
-      - name: Proof HTML
-        uses: anishathalye/proof-html@v2.0.4
+    - uses: actions/checkout@v2
+    - name: check-html-links-action step
+      id: check-links
+      uses: modernweb-dev/check-html-links-action@v1
+      with:
+        doc-folder: 'root'
