@@ -1,2 +1,11 @@
+on: [push]
+
+
 name: Proof HTML
-  uses: anishathalye/proof-html@v2.0.4
+jobs:
+  check:
+    name: Broken Link Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Proof HTML
+        uses: anishathalye/proof-html@v2.0.4
